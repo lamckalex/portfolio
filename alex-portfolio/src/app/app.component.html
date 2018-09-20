@@ -1,7 +1,7 @@
 <div class="portfolio-body">
   <div class="header section ">
     <h1 class="lead">
-      Hi, I'm Alex Lam.
+      Alex Lam
     </h1>
     <div class="description">
       I'm a Web Developer in Vancouver, BC, Canada.<br>
@@ -18,7 +18,7 @@
     <mat-accordion multi="true">
       <mat-expansion-panel *ngFor="let panel of panels">
         <mat-expansion-panel-header>
-          <span>
+          <span style="display: flex; flex-wrap: wrap">
             <span class="title">{{panel.title}},</span>
             <span class="subtitle">{{panel.subtitle}},</span>
             <span class="duration">{{panel.from}} - {{panel.to}}</span>
@@ -45,16 +45,16 @@
       <h3>Contact Me</h3>
     </div>
     <div>
-      <button mat-raised-button color="primary">
+      <a href="https://www.linkedin.com/in/lamckalex/" class="contact-buttons" mat-raised-button color="primary">
         <div style="padding-top:5px">
           <fa-icon [icon]="faLinkedin" size="2x"></fa-icon>
         </div>
-      </button>
-      <button mat-raised-button color="primary">
+      </a>
+      <a href="https://github.com/lamckalex/" class="contact-buttons" mat-raised-button color="primary">
         <div style="padding-top:5px">
           <fa-icon [icon]="faGithub" size="2x"></fa-icon>
         </div>
-      </button>
+      </a>
     </div>
   </div>
   <!-- <div>
