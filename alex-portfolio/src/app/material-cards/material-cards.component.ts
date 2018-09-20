@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { MatCardObject } from './mat-card-object';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-material-cards',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./material-cards.component.css']
 })
 export class MaterialCardsComponent implements OnInit {
+
+  @Input() cards: MatCardObject[];
 
   constructor() { }
 

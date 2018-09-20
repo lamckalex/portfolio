@@ -1,2 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+  background: #f3f3f3;
+}
+
+.mat-card {
+  width: 400px;
+  text-align: left;
+  margin: 5px;
+}

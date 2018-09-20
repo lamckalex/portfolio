@@ -1,5 +1,5 @@
 <div class="portfolio-body">
-  <div class="header">
+  <div class="header section ">
     <h1 class="lead">
       Hi, I'm Alex Lam.
     </h1>
@@ -8,11 +8,56 @@
       I have 3 years of web development experience, mainly focusing on Angular development.<br>
       I have worked with several enterprise level projects for different companies.<br>
       Feel free to reach out!<br>
-      linkedin github
     </div>
   </div>
 
-  <div>
-    <app-space-stats></app-space-stats>
+  <div class="section">
+    <div class="section-header">
+      <h3>Work Experiences</h3>
+    </div>
+    <mat-accordion multi="true">
+      <mat-expansion-panel *ngFor="let panel of panels">
+        <mat-expansion-panel-header>
+          <span>
+            <span class="title">{{panel.title}},</span>
+            <span class="subtitle">{{panel.subtitle}},</span>
+            <span class="duration">{{panel.from}} - {{panel.to}}</span>
+          </span>
+        </mat-expansion-panel-header>
+        <ul style="text-align:left">
+          <li *ngFor="let desc of panel.description">
+            {{desc}}
+          </li>
+        </ul>
+      </mat-expansion-panel>
+    </mat-accordion>
   </div>
+
+  <div class="section">
+    <div class="section-header">
+      <h3>Projects</h3>
+    </div>
+    <app-material-cards [cards]="projects"></app-material-cards>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <h3>Contact Me</h3>
+    </div>
+    <div>
+      <button mat-raised-button color="primary">
+        <div style="padding-top:5px">
+          <fa-icon [icon]="faLinkedin" size="2x"></fa-icon>
+        </div>
+      </button>
+      <button mat-raised-button color="primary">
+        <div style="padding-top:5px">
+          <fa-icon [icon]="faGithub" size="2x"></fa-icon>
+        </div>
+      </button>
+    </div>
+  </div>
+  <!-- <div>
+    <app-space-stats></app-space-stats>
+  </div> -->
 </div>
