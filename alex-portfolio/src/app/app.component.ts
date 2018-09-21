@@ -14,6 +14,9 @@ export class AppComponent implements OnInit {
 
   title = 'alex-portfolio';
 
+  name = "Alex Lam"
+  description = "I'm a Web Developer in Vancouver, BC, Canada. \n I have 3 years of web development experience, mainly focusing on Angular development.\n I have worked with several enterprise level projects for different companies. \n Feel free to reach out! \n"
+
   projects = [
     new MatCardObject(
       "Portfolio",
