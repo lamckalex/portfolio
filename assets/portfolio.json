@@ -6,10 +6,11 @@
   "projects": [{
     "title": "Portfolio",
     "subtitle": "Web Based Resume",
-    "description": "To try out Angular Material Library",
+    "description": "Create an easy to maintain Webpage that reads my Resume based on a JSON file.",
     "image": "assets/images/portfolio.png",
     "skills": [
         "Angular 6",
+        "JSON",
         "Font Awesome Angular Component",
         "Material Angular"]
   }],
