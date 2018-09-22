@@ -2,8 +2,8 @@
     font-family: Arial;
     max-width: 1000px;
     background-color: #efefef;
-    display: inline-block;
     text-align:center;
+    margin:0 auto;
 }
 
 .header{
