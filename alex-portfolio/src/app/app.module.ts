@@ -19,7 +19,8 @@ import { MaterialCardsComponent } from './material-cards/material-cards.componen
     AppComponent,
     SpaceStatsComponent,
     MapComponent,
-    MaterialCardsComponent
+    MaterialCardsComponent,
+    
   ],
   imports: [
     FontAwesomeModule,

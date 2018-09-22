@@ -6,9 +6,9 @@ export class MatCardObject {
     skills: string[];
 
     constructor(
-        title: string,
-        subtitle: string,
-        description: string,
+        title?: string,
+        subtitle?: string,
+        description?: string,
         image?: string,
         skills?: string[]
     ) {

@@ -1,13 +1,25 @@
+import { MatPanel } from './mat-panel';
 import { MatCardObject } from "../material-cards/mat-card-object";
-import { Panels } from "./panels";
 
 export class Portfolio {
     name: string;
     description: string;
+    linkedin: string;
+    github: string;
     projects: MatCardObject[];
-    panels: Panels[];
+    panels: MatPanel[];
 
-    constructor(){
-
+    constructor(
+        name?: string,
+        description?: string,
+        linkedin?: string,
+        github?: string,
+        projects?: MatCardObject[],
+        panels?: MatPanel[]
+    ){
+        this.name = name;
+        this.description = description;
+        this.projects = projects;
+        this.panels = panels;
     }
 }

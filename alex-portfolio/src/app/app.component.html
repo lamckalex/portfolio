@@ -1,19 +1,19 @@
-<div class="portfolio-body">
+<div *ngIf="myPortfolio" class="portfolio-body">
   <div class="header section ">
     <h1 class="lead">
-      {{name}}
+      {{myPortfolio?.name}}
     </h1>
     <div class="description">
-      {{description}}
+      {{myPortfolio?.description}}
     </div>
   </div>
 
-  <div class="section">
+  <div *ngIf="myPortfolio.experiences" class="section">
     <div class="section-header">
       <h3>Work Experiences</h3>
     </div>
     <mat-accordion multi="true">
-      <mat-expansion-panel *ngFor="let panel of panels">
+      <mat-expansion-panel *ngFor="let panel of myPortfolio.experiences">
         <mat-expansion-panel-header>
           <span style="display: flex; flex-wrap: wrap">
             <span class="title">{{panel.title}},</span>
@@ -30,11 +30,11 @@
     </mat-accordion>
   </div>
 
-  <div class="section">
+  <div *ngIf="myPortfolio.projects" class="section">
     <div class="section-header">
       <h3>Projects</h3>
     </div>
-    <app-material-cards [cards]="projects"></app-material-cards>
+    <app-material-cards [cards]="myPortfolio.projects"></app-material-cards>
   </div>
 
   <div class="section">
@@ -42,12 +42,12 @@
       <h3>Contact Me</h3>
     </div>
     <div>
-      <a href="https://www.linkedin.com/in/lamckalex/" class="contact-buttons" mat-raised-button color="primary">
+      <a *ngIf="myPortfolio.linkedin" href="{{myPortfolio.linkedin}}" class="contact-buttons" mat-raised-button color="primary">
         <div style="padding-top:5px">
           <fa-icon [icon]="faLinkedin" size="2x"></fa-icon>
         </div>
       </a>
-      <a href="https://github.com/lamckalex/" class="contact-buttons" mat-raised-button color="primary">
+      <a *ngIf="myPortfolio.github" href="{{myPortfolio.github}}" class="contact-buttons" mat-raised-button color="primary">
         <div style="padding-top:5px">
           <fa-icon [icon]="faGithub" size="2x"></fa-icon>
         </div>
