@@ -41,5 +41,18 @@
         "Mentor junior members of the team"
       ]
     }
-  ]
+  ],
+"education": [
+    {
+        "title": "Computer Systems Technology Diploma",
+        "subtitle": "BCIT",
+        "from": "2013",
+        "to": "2015",
+        "description": [
+            "Data Communication Option, Graduated with Distinction (80% average)",
+            "Java, C, C++, Android native development, Hybrid Apps Development (PhoneGap), and web development",
+            "Two projects with real clients from industry that resulted in viable products"
+        ]
+    }
+]
 }
