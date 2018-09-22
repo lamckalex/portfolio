@@ -1,4 +1,4 @@
-import { MatPanel } from './mat-panel';
+import { MatPanel } from '../material-panels/mat-panel';
 import { MatCardObject } from "../material-cards/mat-card-object";
 
 export class Portfolio {

@@ -13,6 +13,7 @@ import {
   MatCardModule, MatButtonModule, MatExpansionModule,
 } from '@angular/material';
 import { MaterialCardsComponent } from './material-cards/material-cards.component';
+import { MaterialPanelsComponent } from './material-panels/material-panels.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { MaterialCardsComponent } from './material-cards/material-cards.componen
     SpaceStatsComponent,
     MapComponent,
     MaterialCardsComponent,
+    MaterialPanelsComponent,
     
   ],
   imports: [
