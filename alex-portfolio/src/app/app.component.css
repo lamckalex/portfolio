@@ -1,6 +1,8 @@
 .portfolio-body{
     font-family: Arial;
-    max-width: 100%;
+    max-width: 1000px;
+    background-color: #efefef;
+    display: inline-block;
     text-align:center;
 }
 
