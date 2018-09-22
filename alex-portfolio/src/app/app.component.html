@@ -13,7 +13,29 @@
       <h3>Work Experiences</h3>
     </div>
     <mat-accordion multi="true">
-      <mat-expansion-panel *ngFor="let panel of myPortfolio.experiences">
+      <mat-expansion-panel *ngFor="let panel of myPortfolio.experiences; let i = index" [expanded]="i == 0">
+        <mat-expansion-panel-header>
+          <span style="display: flex; flex-wrap: wrap">
+            <span class="title">{{panel.title}},</span>
+            <span class="subtitle">{{panel.subtitle}},</span>
+            <span class="duration">{{panel.from}} - {{panel.to}}</span>
+          </span>
+        </mat-expansion-panel-header>
+        <ul style="text-align:left">
+          <li *ngFor="let desc of panel.description">
+            {{desc}}
+          </li>
+        </ul>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+
+  <div *ngIf="myPortfolio.education" class="section">
+    <div class="section-header">
+      <h3>Education</h3>
+    </div>
+    <mat-accordion multi="true">
+      <mat-expansion-panel *ngFor="let panel of myPortfolio.education; let i = index" [expanded]="i == 0">
         <mat-expansion-panel-header>
           <span style="display: flex; flex-wrap: wrap">
             <span class="title">{{panel.title}},</span>
