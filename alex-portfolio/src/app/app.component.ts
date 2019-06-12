@@ -11,8 +11,8 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
   styleUrls: ['./app.component.css']
 })
   //Push to github pages
-  // ng build --prod --base-href "https://lamckalex.github.io/portfolio"
-  // ngh --dir=dist/alex-portfolio
+  //ng build --base-href /portfolio/ --prod
+  //npx ngh --dir=../dist/alex-portfolio
 
 export class AppComponent implements OnInit {
   faLinkedin = faLinkedin;
